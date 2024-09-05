@@ -1,0 +1,25 @@
+#abeceda = {ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+stevilka = input("Številka:")
+dolzina = int(len(a))
+vsota = 0
+p = "+"
+sist = int(input("Kater sistem:"))
+#if sist > 9:
+
+
+else:
+    
+    for x in stevilka:
+        dolzina = dolzina-1
+        x = int(x)
+        t = x*sist**dolzina
+        n = 
+    
+        vsota = vsota + t
+    if dolzina == 0:
+        break
+    else:
+
+        continue
+
+print (vsota)
