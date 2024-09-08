@@ -1,27 +1,36 @@
-abeceda = (ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+abeceda = str("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 stevilka = input("Številka:")
-dolzina = int(len(a))
+dolzina = len(stevilka) - 1
 vsota = 0
-crka = 10
 p = "+"
-sist = int(input("Kater sistem:"))
-#
-    
-    for x in stevilka:
-        try:
-            x = int(x)
-        except:
-            for y in abeceda
-                if y == x:
-                    crka += 1
-                    x = crka
-                    break
-        dolzina = dolzina-1
+k = "*"
+eks = "^"
+niz = str("Postopek: ")
+sist = input("Kater sistem:")
+
+for x in stevilka:
+    try:
         x = int(x)
-        stevka = x*sist**dolzina
-        del = str(f x "*" sist "^" dolzina)
-        niz = niz + del
-        vsota = vsota + stevka
+    except:
+        crka = 9
+        for y in abeceda:
+            crka += 1
+            if y == x:
+                x = crka
+                break
+            
+    part = x + k + sist + eks + dolzina
+    niz = niz + part
+    
+    if dolzina != 0:
+        niz = niz + p
+        
+    x = int(x)
+    dolzina = int(dolzina)
+    sist = int(sist)
+    stevka = x*sist**dolzina
+    vsota = vsota + stevka
+    dolzina -= 1
 
 print (vsota)
 print (niz)
